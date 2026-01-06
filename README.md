@@ -52,5 +52,6 @@ A guided overview of the repository structure to maintain architectural consiste
    ```
 
 links(temporary): 
+- http://localhost:3000/
 - http://localhost:3000/api-docs/
 - https://github.com/juice-shop/juice-shop/blob/master/server.ts
