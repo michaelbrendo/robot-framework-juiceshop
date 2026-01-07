@@ -1,4 +1,4 @@
-.PHONY: setup setup-deps check-reqs test-api clean help
+.PHONY: setup setup-deps check-reqs test-api clean help lint-check lint-format
 
 # Variables
 ROBOT_REPORT_DIR = results
@@ -26,7 +26,14 @@ check-reqs:
 	@pipenv --version > /dev/null 2>&1 || (echo "Error: Pipenv not found. Run: pipx install pipenv"; exit 1)
 	@echo "Prerequisites verified successfully!"
 
-## @test-api Run the API smoke test suite
+# Code Quality
+lint-check:
+	pipenv run robocop check
+
+lint-format:
+	pipenv run robocop format
+
+## @test-api Run the API test suite
 test-api:
 	pipenv run robot -d $(ROBOT_REPORT_DIR)/api tests/api/products.robot 
 

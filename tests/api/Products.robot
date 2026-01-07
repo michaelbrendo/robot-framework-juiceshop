@@ -12,7 +12,7 @@ Test Setup          Start API Session
 *** Test Cases ***
 Should Validate Product List Availability
     [Documentation]    Ensures the general product list is available and the
-    ...                JSON response matches the search contract.
+    ...    JSON response matches the search contract.
     [Tags]    smoke    api
     ${response}    Get Product Search Results
 
@@ -21,7 +21,7 @@ Should Validate Product List Availability
 
 Should Search Product By Name
     [Documentation]    Ensures the search functionality filters products correctly by name
-    ...                while maintaining the integrity of the JSON contract.
+    ...    while maintaining the integrity of the JSON contract.
     [Tags]    regression    api
     ${product_name}    Set Variable    Apple Juice
     ${response}    Get Product Search Results    search_term=${product_name}

@@ -1,5 +1,11 @@
 # Robot Framework Juice Shop
 
+![Robot Framework](https://img.shields.io/badge/Framework-Robot%20Framework-brightgreen)
+![Python](https://img.shields.io/badge/Language-Python%203.10+-blue)
+![Linter](https://img.shields.io/badge/Linter-Robocop-informational)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+<!-- ![CI/CD](https://img.shields.io/github/actions/workflow/status/michaelbrendo/robot-framework-juiceshop/robot-ci.yml?branch=main&label=Build) -->
+
 Automated testing suite for OWASP Juice Shop.
 
 ## Project Architecture
@@ -18,7 +24,6 @@ This project follows a **Layered Keyword-Driven Design** combined with the **Pag
 A guided overview of the repository structure to maintain architectural consistency:
 
 ```bash
-├── data/               # Test data (JSON/YAML) and environment variables
 ├── resources/          # The core of the automation logic
 │   ├── pages/          # Page Objects: Selectors and UI actions (E2E)
 │   ├── services/       # API Services: Request definitions (API)
@@ -38,6 +43,16 @@ A guided overview of the repository structure to maintain architectural consiste
     - [Requests](https://marketsquare.github.io/robotframework-requests/) for API testing.
 - **Language:** Python 3.x
 - **Infrastructure:** Docker (SUT)
+
+## Code Quality
+To maintain high standards and clean code, this project uses:
+- **[Robocop](https://github.com/MarketSquare/robotframework-robocop):** Static code analysis (Linter).
+
+- **Check for issues:**
+```bash
+make lint-check
+make lint-format
+```
 
 ## Quick Start
 
