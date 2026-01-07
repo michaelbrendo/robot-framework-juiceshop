@@ -7,7 +7,7 @@ name = "pypi"
 robotframework = "*"
 robotframework-browser = "*"
 robotframework-requests = "*"
-robotframework-jsonvalidator = "*"
+robotframework-jsonschemalibrary = "*"
 robotframework-robocop = "*"
 robotframework-tidy = "*"
 
