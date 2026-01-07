@@ -48,7 +48,7 @@ A guided overview of the repository structure to maintain architectural consiste
 To maintain high standards and clean code, this project uses:
 - **[Robocop](https://github.com/MarketSquare/robotframework-robocop):** Static code analysis (Linter).
 
-- **Check for issues:**
+**Check for issues:**
 ```bash
 make lint-check
 make lint-format
