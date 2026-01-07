@@ -56,7 +56,9 @@ make lint-format
 
 ## Quick Start
 
-1. **Prerequisites:** Ensure you have `python`, `node.js`, and `pipenv` installed.
+1. **Prerequisites:** Ensure you have 
+    - `python`, `node.js`, and `pipenv` installed.
+    - A running instance of Juice Shop (Check [juice-shop-infra](https://github.com/michaelbrendo/juice-shop-infra) for Docker setup).
 2. **Setup:** Install dependencies and browser binaries:
    ```bash
    make setup
